@@ -37,8 +37,8 @@ jobs:
           name: Publish Docker Image to DockerHub
           command: | 
             echo "$DOCKER_PASS" | docker login -u "$DOCKER_USERNAME" --password-stdin
-            docker tag udagram-frontend emmanuelstanley/udagram-frontend:v1
-            docker push emmanuelstanley/udagram-frontend:v1
+            docker tag udagram-frontend emmanuelstanley/udagram-frontend:v2
+            docker push emmanuelstanley/udagram-frontend:v2
 workflows:
   version: 2
   build-master:
